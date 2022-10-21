@@ -5,6 +5,7 @@ import net.minecraft.src.IconRegister;
 import net.minecraft.src.ItemRecord;
 
 public class CustomRecord extends ItemRecord {
+    public final static Minecraft mc = Minecraft.getMinecraft();
     public String recordArtist;
     public String recordTitle;
     public CustomRecord(int par1, String recordArtist, String recordTitle) {

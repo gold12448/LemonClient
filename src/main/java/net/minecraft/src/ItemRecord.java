@@ -15,7 +15,7 @@ public class ItemRecord extends Item {
 		super(par1);
 		this.recordName = par2Str;
 		this.maxStackSize = 1;
-		this.setCreativeTab(CreativeTabs.tabMisc);
+		this.setCreativeTab(CreativeTabs.tabRecords);
 		records.put(par2Str, this);
 	}
 

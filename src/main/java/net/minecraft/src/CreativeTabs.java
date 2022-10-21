@@ -16,6 +16,7 @@ public class CreativeTabs {
 	public static final CreativeTabs tabBrewing = new CreativeTabBrewing(9, "brewing");
 	public static final CreativeTabs tabMaterials = new CreativeTabMaterial(10, "materials");
 	public static final CreativeTabs tabInventory = (new CreativeTabInventory(11, "inventory")).setBackgroundImageName("survival_inv.png").setNoScrollbar().setNoTitle();
+	public static final CreativeTabs tabRecords = (new CreativeTabRecords(12, "records")).setBackgroundImageName("record_wait.png");
 	private final int tabIndex;
 	private final String tabLabel;
 

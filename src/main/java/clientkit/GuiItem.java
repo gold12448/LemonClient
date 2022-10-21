@@ -5,6 +5,7 @@ import net.minecraft.src.Gui;
 import net.lax1dude.eaglercraft.TextureLocation;
 
 public class GuiItem extends Gui {
+    public final static Minecraft mc = Minecraft.getMinecraft();
     public int x;
     public int y;
     public int itemid;

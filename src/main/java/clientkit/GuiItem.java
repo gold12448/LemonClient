@@ -2,6 +2,10 @@ package clientkit;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.src.Gui;
+import net.minecraft.src.TextureStitched;
+
+import org.w3c.dom.Text;
+
 import net.lax1dude.eaglercraft.TextureLocation;
 
 public class GuiItem extends Gui {
@@ -11,14 +15,19 @@ public class GuiItem extends Gui {
     public int itemid;
     public int itemamt;
     public int itemname;
+    public TextureLocation texture;
     public GuiItem(int x, int y, int itemid) {
         this.x = x;
         this.y = y;
         this.itemid = itemid;
         this.itemamt = 0;
+
     }
     public void draw() {
-        this.mc.renderEngine.bindTexture(this.texture);
+        // get the item's texture out of the texture map
+        this.texture = TextureLocation.getTextureLocation(mc.renderEngine.getTexture("/gui/items.png"));
+        // bind the texture of the selected item
+        mc.renderEngine.bindTexture(this.texture);
         // draw item icon and item count if the player has the item in their inventory
         this.drawTexturedModalRect(this.x, this.y, 0, 0, 16, 16);
         this.drawCenteredString(this.fontRenderer, "0", this.x + 8, this.y + 8, 0xFFFFFF);

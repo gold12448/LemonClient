@@ -33,6 +33,8 @@ public class GuiScreenConnectOption extends GuiScreen {
 		if(par1GuiButton.id == 0) {
 			mc.displayGuiScreen(guiScreen);
 		}else if(par1GuiButton.id == 1) {
+			// print the server data to console (for debugging)
+			System.out.println("Server data: " + guiScreen.serverData);
 			mc.displayGuiScreen(new GuiScreenDirectConnect(guiScreen, guiScreen.getTheServerData()));
 		}else if(par1GuiButton.id == 2) {
 			GuiScreen scn = new GuiScreenLANConnect(guiScreen);

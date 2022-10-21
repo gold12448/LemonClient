@@ -199,15 +199,8 @@ public class EaglerProfile {
 	}
 	
 	static {
-		String[] usernameDefaultWords = ConfigConstants.profanity ? new String[] {
-				"Eagler", "Eagler", "Bitch", "Cock", "Milf", "Milf", "Yeer", "Groon",
-				"Eag", "Deevis", "Chode", "Deev", "Deev", "Fucker", "Fucking",
-				"Dumpster", "Dumpster", "Cum", "Chad", "Egg", "Fudgler", "Fudgli",
-				"Yee", "Yee", "Yee", "Yeet", "Flumpter", "Darvy", "Darver", "Darver",
-				"Fuck", "Fuck", "Frick", "Eagler", "Vigg", "Vigg", "Cunt", "Darvig"
-		} : new String[] {
-				"Yeeish", "Yeeish", "Yee", "Yee", "Yeer", "Yeeler", "Eagler", "Eagl",
-				"Darver", "Darvler", "Vool", "Vigg", "Vigg", "Deev", "Yigg", "Yeeg"
+		String[] usernameDefaultWords = new String[] {
+				"Clientkit", "Tech", "Great", "Dev"
 		};
 		
 		rand = new EaglercraftRandom();

@@ -17,6 +17,8 @@ class Main {
         for (int i = 0; i < customRecords.size(); i++) {
             CustomRecord record = (CustomRecord) customRecords.get(i);
             mc.renderEngine.registerTextureFX(record);
+            // register the record to the sound manager
+            mc.sndManager.addSound(record.getSoundName(), record);
         }
         // ticker that runs every gametick
         while (minecraft.isRunning()) {

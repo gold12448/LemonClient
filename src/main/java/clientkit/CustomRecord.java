@@ -13,7 +13,7 @@ public class CustomRecord extends ItemRecord {
         this.recordArtist = recordArtist;
         this.recordTitle = recordTitle;
     }
-    public string getRecordTitle() {
+    public String getRecordTitle() {
         // return the record's artist and title
         return this.recordArtist + " - " + this.recordTitle;
     }

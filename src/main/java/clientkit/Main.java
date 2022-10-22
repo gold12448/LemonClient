@@ -21,9 +21,9 @@ class Main {
             mc.sndManager.addSound(record.getSoundName(), record);
         }
         // ticker that runs every gametick
-        while (minecraft.isRunning()) {
+        while (minecraft.running == true) {
             // check if the game is paused
-            if (!minecraft.isGamePaused()) {
+            if (!minecraft.isGamePaused == true) {
                 self.tick();
             }
         }
